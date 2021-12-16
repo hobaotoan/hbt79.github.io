@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký</title>
+  <link rel="shortcut icon" href="img/logo.png">
+  <link href=" https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!--popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+
+  <!-- <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.0/swiper-bundle.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.0/swiper-bundle.min.js"></script> -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/javascript.js"></script>
+  <script src="js/register.js"></script>
+
+</head>
+
+<body class="bg-light bg-img">
+    <!-- <img class="img-thumbnail position-relative" style="z-index: -10;" src="img/backgound.png"> -->
+
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4"></div>
+            <div class="col-12 col-md-4">
+                <div class="bg-white p-4 rounded-3 shadow-lg m-2">
+                    <h3 class="title-page text-center p-3">Đăng ký thành viên</h3>
+                    <form id="form" action="sign-in.html" method="get" onsubmit="return frmValidate(this);">
+                        <div class="mb-3">
+                          <label for="tendangnhap" class="form-label">Tên đăng nhập *</label>
+                          <input type="text" class="form-control" id="tendangnhap" placeholder="Nhập tên đăng nhập">
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputEmail" class="form-label">Email *</label>
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Nhập Email phù hợp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Mật khẩu *</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Nhập mật khẩu">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword1" class="form-label">Nhập lại mật khẩu *</label>
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="Nhập lại mật khẩu">
+                        </div>
+                        <div class="mb-3 d-flex">
+                          <label for="" class="form-label me-4">Giới tính *</label>
+                          <div class="form-check me-4">
+                              <input class="form-check-input" type="checkbox" value="" id="number1">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Nam
+                              </label>
+                            </div>
+                            <div class="form-check me-4">
+                              <input class="form-check-input" type="checkbox" value="" id="number2" >
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Nữ
+                              </label>
+                            </div>
+                            <div class="form-check me-4">
+                              <input class="form-check-input" type="checkbox" value="" id="number3" >
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Khác
+                              </label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="inputPhone" class="form-label me-4">Ngày sinh *</label>
+                          <input type="text" class="form-control" id="inputDate" placeholder="Nhập ngày sinh theo định dạng dd/mm/yyyy">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPhone" class="form-label">Số điện thoại *</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputAddress" class="form-label">Địa chỉ *</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Nhập địa chỉ">
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                          <button type="submit" class="btn btn-order" onclick="store()">Đăng ký</button>
+                          <a href="sign-in.html">Đăng nhập tại đây!</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div class="loader-container">
+      <img src="img/icons8-salad.gif" alt="">
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
