@@ -252,7 +252,7 @@ function fadeOut() {
 }
 
 function guiform() {
-    var filter = document.getElementById("search").value;
+    var filter = document.getElementById("search").value.toLowerCase();
     var str = "san pham bap cai ca rot carrot dau ha lan ot chuong ớt chuông đậu hà lan cà rốt bắp cải sản phẩm"
     var str1 = "gioi thieu giới thiệu"
     var str2 = "lien he liên hệ"
