@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ | Veg Store</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href=" https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+  
+  
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.0/swiper-bundle.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.0/swiper-bundle.min.js"></script> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/javascript.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top"> 
+    <div class="navbar navbar-expand-sm shadow-sm fixed-top bg-white">
+        <div class="container">
+          <a class="navbar-brand fs-2 fw-bolder" style="color:#192a56" href="#">
+            <i class="fas fa-carrot header-logo "></i>Veg
+          </a>
+          <div class="collapse navbar-collapse justify-content-lg-center " id="navbarNav">
+            <ul class="navbar-nav fs-6">
+              <li class="nav-item">
+                <a class="nav-link text-muted nav-item-block" href="#">Trang Chủ</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-muted nav-item-block" href="intro.html">Giới Thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted nav-item-block" href="product.html">Sản Phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-muted nav-item-block" href="contact.html">Liên Hệ</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button class="navbar-toggler header-navbar-toggler border-header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <!-- <a href="#" class="fs-6 "><i class="fas fa-search header-icon"></i></a> -->
+            <a href="cartdetail.html" class="fs-6"><i class="fas fa-shopping-cart header-icon"></i></a>
+            <a href="personal.html" class="fs-6 "><i class="fas fa-user header-icon"></i></a>
+            <a href="sign-in.html" class="fs-6 "><i class="fas fa-sign-out-alt header-icon"></i></a>
+          </div>
+        </div>
+    </div>    
+  </nav>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner mt-5">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="container container-fix">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                <div class="text-center">
+                  <h1 class="title-brand">Bắp Cải</h1>
+                  <h5 class="text-lowercase lh-sm "> Bắp cải hay cải bắp hay cải nồi là một loại rau chủ lực trong họ Cải, phát sinh từ vùng Địa Trung Hải.</h5>
+                  <a href="product.html"><button type="button" class="button-brand shadow">Đặt hàng ngay</button></a>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="img-size">
+                  <img src="img/cabbage_PNG99121.png" class="d-block img-size-piz w-100 h-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="container container-fix">
+            <div class="row">
+              <div class="col-lg-6 d-flex align-items-center">
+                  <div class="text-center ">
+                    <h1 class="title-brand ">Ớt chuông Đà Lạt</h1>
+                    <h5 class="text-lowercase lh-sm">Ớt chuông, hay còn gọi là ớt ngọt, là quả của một nhóm cây trồng, loài Capsicum annuum. </h5>
+                    <a href="product.html"><button type="button" class="button-brand shadow">Đặt hàng ngay</button></a>
+                  </div>
+              </div>
+              <div class="col-lg-6 ">
+                <div class="img-size ">
+                  <img src="img/pepper_PNG3253.png" class="d-block img-size-piz w-100 h-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="container container-fix">
+            <div class="row">
+              <div class="col-lg-6 d-flex align-items-center">
+                <div class="text-center ">
+                  <h1 class="title-brand">Bắp Mỹ</h1>
+                  <h5 class="text-lowercase lh-sm">Ngô ngọt hay ngô đường, bắp ngọt, bắp đường; là giống ngô có hàm lượng đường cao. </h5>
+                  <a href="product.html"><button type="button" class="button-brand shadow">Đặt hàng ngay</button></a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="img-size">
+                  <img src="img/corn_PNG98660.png" class="d-block img-size-piz w-100 h-100" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section>
+      <div class="pt-3 d-flex align-items-center justify-content-center">
+        <!-- <i class="fas fa-check-double m-2" style="color: #27ae60;"></i> -->
+        <h2 class="title-page">Phản hồi của khách hàng<span class="title-page-dot">.</span></h2>
+      </div>
+      <div class="container p-3 mt-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-3" data-aos="fade-right">
+          <div class="col">
+            <div class="card h-80 shadow-sm mb-2 bg-body rounded">
+              <div class="row">
+                <div class="col-3"><img src="https://i.pinimg.com/236x/b2/d9/2c/b2d92c6aa61b5ba1a1cf9e633d454e16.jpg" class="m-2 card-img-top rounded-circle" style="height: 60px; width:60px; object-fit: cover; " alt="..."></div>
+                <div class="col-9 align-self-center">
+                  <h5 style="font-weight:800; color: #192a56;">Hồ Bảo Toàn</h5>
+                  <div>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star-half-alt star-five"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Sản phẩm tốt, giao hàng nhanh.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted fst-italic">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-80 shadow-sm mb-2 bg-body rounded">
+              <div class="row">
+                <div class="col-3"><img src="https://i.pinimg.com/564x/f7/5e/d8/f75ed8a3ce288d74575e0c21b953c4af.jpg" class="m-2 card-img-top rounded-circle" style="height: 60px; width:60px; object-fit: cover; " alt="..."></div>
+                <div class="col-9 align-self-center">
+                  <h5 style="font-weight:800; color: #192a56;">Lý Yến Trinh</h5>
+                  <div>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star-half-alt star-five"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Rau tươi, giá cả hợp lí, rất đáng tiền.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted fst-italic">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-80 shadow-sm mb-2 bg-body rounded">
+              <div class="row">
+                <div class="col-3"><img src="https://i.pinimg.com/236x/e2/a8/31/e2a831a40846322742739537c9aaec1c.jpg" class="m-2 card-img-top rounded-circle" style="height: 60px; width:60px; object-fit: cover; " alt="..."></div>
+                <div class="col-9 align-self-center">
+                  <h5 style="font-weight:800; color: #192a56;">Trần Như Ý</h5>
+                  <div>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star star-five"></i>
+                    <i class="fas fa-star-half-alt star-five"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Giao hàng nhanh, chất lượng tốt, giá hợp lí.</p>
+              </div>
+              <div class="card-footer ">
+                <small class="text-muted fst-italic">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mb-5">
+      <div class="pt-3 d-flex align-items-center justify-content-center">
+        <!-- <i class="fas fa-check-double m-2" style="color: #27ae60;"></i> -->
+        <h2 class="title-page">sản phẩm nổi bật<span class="title-page-dot">.</span></h2>
+      </div>
+      <div class="container pt-5 px-4 pb-4">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-3 col-sm-6 col-xs-12 col-md-6 col-lg-3 mb-3">
+            <div class="card shadow-sm rounded-3" style="width: auto;">
+                <img src="img/cabbage_PNG99121.png" class="card-img-top p-4 rounded-3" style="width: auto; height: 15rem; object-fit: fill; " alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="card-title">Bắp Cải</h4>
+                    <p class="card-price fst-italic fs-5 text-muted">33.000<sup>đ</sup>/300g</p>
+                  </div>
+                  <p class="card-text text-muted">- Xuất sứ: Đà Lạt<br>
+                    - Canh tác theo hướng hữu cơ<br>
+                    - Chứa nhiều chất xơ tốt và các vitamin C, K, B6, folate,...</p>
+                </div>
+                <div class="input-group mb-3 px-3">
+                  <!-- <input type="text" class="form-control" placeholder="Nhập số lượng" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+                  <a href="product.html"><button class="btn btn-order btn-outline-secondary" type="button" id="button-addon2">Đặt hàng</button></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12 col-md-6 col-lg-3 mb-3">
+            <div class="card shadow-sm rounded-3" style="width: auto;">
+                <img src="img/carrot_PNG4985.png" class="card-img-top p-4 rounded-3"  style="width: 100%; height: 15rem; object-fit: fill;" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="card-title">Cà Rốt</h4>
+                    <p class="card-price fst-italic fs-5 text-muted">16.000<sup>đ</sup>/500g</p>
+                  </div>
+                  <p class="card-text text-muted">- Xuất sứ: Lâm Đồng<br>
+                    - Canh tác theo hướng hữu cơ<br>
+                    - Chứa vitamin A, carotenoid, kali và các chất chống oxy hoá.</p>
+                </div>
+                <div class="input-group mb-3 px-3">
+                  <!-- <input type="text" class="form-control" placeholder="Nhập số lượng" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+                  <a href="product.html"><button class="btn btn-order btn-outline-secondary" type="button" id="button-addon2">Đặt hàng</button></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6  col-xs-12 col-md-6 col-lg-3 mb-3">
+            <div class="card shadow-sm rounded-3" style="width: auto;">
+                <img src="img/pea_PNG24331.png" class="card-img-top p-4 rounded-3" style="width: 100%; height: 15rem; object-fit: fill;" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="card-title">Đậu Hà Lan</h4>
+                    <p class="card-price fst-italic fs-5 text-muted">160.000<sup>đ</sup>/250g</p>
+                </div> 
+                <p class="card-text text-muted">- Xuất sứ: Đà Lạt<br>
+                  - Canh tác theo hướng hữu cơ<br>
+                  - Chứa flavonoids, dinh dưỡng thực vật, carotenoid, axit phenolic,...</p>
+                </div>
+                <div class="input-group mb-3 px-3">
+                  <!-- <input type="text" class="form-control" placeholder="Nhập số lượng" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+                  <a href="product.html"><button class="btn btn-order btn-outline-secondary" type="button" id="button-addon2">Đặt hàng</button></a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6  col-xs-12 col-md-6 col-lg-3 mb-3">
+            <div class="card shadow-sm rounded-3" style="width: auto;">
+                <img src="img/pepper_PNG3253.png" class="card-img-top p-4 rounded-3" style="width: 100%; height: 15rem; object-fit: fill;" alt="...">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <h4 class="card-title">Ớt Chuông</h4>
+                    <p class="card-price fst-italic fs-5 text-muted">59.000<sup>đ</sup>/300g</p>
+                  </div>
+                  <p class="card-text text-muted">- Xuất sứ: Đà Lạt<br>
+                    - Canh tác theo hướng hữu cơ<br>
+                    - Giàu hàm lượng Vitamin C hơn cả cam, chanh, đu đủ,...</p>
+                </div>
+                <div class="input-group mb-3 px-3">
+                  <!-- <input type="text" class="form-control" placeholder="Nhập số lượng" aria-label="Recipient's username" aria-describedby="button-addon2"> -->
+                  <a href="product.html"><button class="btn btn-order btn-outline-secondary" type="button" id="button-addon2">Đặt hàng</button></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <footer style="text-align: center;">
+      <div class="shadow-lg rounded h-100 p-4" style=" background-color: #27ae60;" >
+        <div class="container p-3">
+          <div class="row">
+            <div class="col-lg-3 col-12 p-2">
+              <div class="">
+                <a class="navbar-brand fs-5 fw-bolder" style="color: #fff;" href="#">
+                  <span>Thông tin cửa hàng</span>
+                </a>
+                <p class="text-light mt-2">
+                  Tên cửa hàng: <i class="fas fa-carrot"></i>Veg<br>
+                  Địa chỉ: 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ.
+                </p>
+              </div>
+
+
+            </div>
+            <div class="col-lg-3 col-12 p-2">
+              <div class="">
+                <a class="navbar-brand fs-5 fw-bolder" style="color: #fff;" href="#">
+                  <span>Liên hệ</span>
+                </a>
+                <p class="text-light mt-2">
+                  Hotline: 0123 456 789<br>
+                  Email: cskh@veg.com
+                </p>
+              </div>
+              <div class="input-group">
+                <input class="form-control form-control-style" type="text" name="search" id="search" placeholder="Nhập nội dung tìm kiếm..." onkeypress="if(event.key === 'Enter') guiform()">
+                <button class="btn btn-success btn-style" id="buttonfind" value="button" onclick="guiform()">Tìm Kiếm</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 p-2">
+              <div class="">
+                <a class="navbar-brand fs-5 fw-bolder" style="color: #fff;" href="#">
+                  <span>Đường dây nóng</span>
+                </a>
+                <p class="text-light mt-2">
+                  Nếu gặp vấn đề khi mua sắm tại Veg, quý khách vui lòng liên hệ 0939 123 456 để được hỗ trợ kịp thời.
+                </p>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-2">
+              <div class="">
+                <a class="navbar-brand fs-5 fw-bolder" style="color: #fff;" href="#">
+                  <span>Liên kết với Veg trên</span>
+                </a>
+                <div>
+                  <a href="#" class="fs-4 text-white mx-1"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#" class="fs-4 text-white mx-1"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="fs-4 text-white mx-1"><i class="far fa-envelope"></i></a>
+                  <a href="#" class="fs-4 text-white mx-1"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
+  <div class="loader-container">
+      <img src="img/icons8-salad.gif" alt="">
+  </div>
+
+  <script>
+    AOS.init({
+        duration:1000,
+        delay:400
+    });
+</script>
+</body>
+</html>
