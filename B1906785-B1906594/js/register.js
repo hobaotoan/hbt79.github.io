@@ -55,7 +55,6 @@ function frmValidate(frm) {
         return true;
     } else return false;
 }
-<<<<<<< Updated upstream
 function store(){
     var inputUsername= document.getElementById("tendangnhap");
     sessionStorage.setItem("username", inputUsername.value);
@@ -65,16 +64,4 @@ function store(){
     sessionStorage.setItem("phone", inputPhone.value);
     var inputPassword= document.getElementById("inputPassword");
     sessionStorage.setItem("pws", inputPassword.value);
-
-=======
-
-
-function store(){
-    var inputUsername= document.getElementById("tendangnhap");
-    localStorage.setItem("username", inputUsername.value);
-    var inputEmail= document.getElementById("inputEmail");
-    localStorage.setItem("email", inputEmail.value);
-    var inputPhone= document.getElementById("inputPhone");
-    localStorage.setItem("phone", inputPhone.value);
->>>>>>> Stashed changes
 }
