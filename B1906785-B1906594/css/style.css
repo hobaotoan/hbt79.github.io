@@ -40,6 +40,16 @@
     width: 3rem;
     text-align: center;
 }
+.totalCart{
+    border-radius: 50%;
+    background: #eee;
+    color:black;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+    width: 1.2rem;
+    text-align: center;
+}
 .header-navbar-toggler{
     height: 3rem;
     width: 3rem;

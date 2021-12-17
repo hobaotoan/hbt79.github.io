@@ -104,9 +104,6 @@ function showCart() {
         var number = localStorage.getItem(localStorage.key(i));
         if (number == null)
             continue;
-
-
-
         var tr = document.createElement("tr");
 
         var giohang_index = document.createElement("th");
@@ -174,8 +171,14 @@ function showCart() {
         cartBody.appendChild(tr);
 
         TotalPretax = TotalPretax + (price * orderNumber);
-
-        // document.getElementById("show-off").innerHTML = "<p class='text-center position-absolute top-50 start-50' style='color:#fff; font-size:10px;' > "+totalCount()+"</p>"
+        
+        if(totalCount(code) >= 99){
+            document.getElementById("show-off").innerHTML = "99+"
+        }else if(totalCount(code) > 0){
+            document.getElementById("show-off").innerHTML = ""+totalCount(code)+""
+        }else{
+            document.getElementById("show-off").innerHTML = "0"
+        }
     }
     var cart_footer = document.getElementById("total");
 
@@ -210,6 +213,8 @@ function showCart() {
         style: 'currency',
         currency: 'VND'
     });
+    
+    // document.getElementsByClassName('totalCart').innerHTML = "" + totalCount() + "";
 
 
 
@@ -223,10 +228,14 @@ function removeCart(code) {
     }
 
 }
-function totalCount() {
+function totalCount(code) {
     var total = 0;
     for (var i = 0; i < localStorage.length; i++) {
-        total += parseInt(window.localStorage.getItem(localStorage.key(i)));
+        if(window.localStorage.getItem(localStorage.key(i)) !== null){
+            total += parseInt(window.localStorage.getItem(localStorage.key(i)));
+        }else{
+            total = 0;
+        }
     }
     return total;
 }
@@ -239,9 +248,6 @@ function getDiscountRate() {
         return 0.1;
     return 0;
 }
-window.onstorage = () => {
-    showCart()
-};
 
 function loader() {
     document.querySelector('.loader-container').classList.add('fade-out');
@@ -281,3 +287,6 @@ function guiform() {
 }
 
 window.onload = fadeOut;
+window.onstorage = () => {
+    showCart()
+};
