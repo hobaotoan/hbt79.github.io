@@ -287,7 +287,7 @@ function guiform() {
 }
 
 window.onload = fadeOut;
-<<<<<<< Updated upstream
+
 window.onstorage = () => {
     showCart()
 };
