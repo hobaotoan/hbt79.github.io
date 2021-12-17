@@ -291,7 +291,7 @@ window.onload = fadeOut;
 window.onstorage = () => {
     showCart()
 };
-=======
+
 
 // function showInfo(){
     
@@ -301,4 +301,4 @@ window.onstorage = () => {
 //     var person_phone = document.getElementById(phonePerson);
 //     person_phone.innerHTML = "" + localStorage.getItem("phone") + "";
 // }
->>>>>>> Stashed changes
+
