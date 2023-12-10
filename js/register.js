@@ -36,7 +36,7 @@ function validate(frm) {
     }
     var phonenumber = getValue('inputPhone');
     if (phonenumber.length > 12 || phonenumber.length < 10) {
-        alert("Tên đăng nhập ít nhất có 3 ký tự!");
+        alert("Vui lòng nhập số điện thoại!");
         return false;
     }
     var addressinput = getValue('inputAddress');
